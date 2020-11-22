@@ -18,15 +18,14 @@ namespace SearchEnginePositionFinder.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index(string searchphrase, string searchwebsite, string searchengine)
+        public async Task<IActionResult> Index(string searchphrase, string searchwebsite, string searchengine)
         {
 
             IndexModelData.SearchPhrase = searchphrase;
             IndexModelData.SearchSite = searchwebsite;
             IndexModelData.SearchEngine = searchengine;
 
-            Task t = IndexModelData.RunGetURLPositionAsync();
-            t.Wait();
+            await IndexModelData.RunGetURLPositionAsync();            
       
             return View(IndexModelData);
         }
