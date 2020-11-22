@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchEnginePositionFinder", "SearchEnginePositionFinder.csproj", "{679F13A3-08B3-4B22-891B-7F51CE0AB0CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchEnginePositionFinderTest", "..\SearchEnginePositionFinderTest\SearchEnginePositionFinderTest.csproj", "{6CC070C2-3B84-4FF8-A6F4-5C418E416F15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{679F13A3-08B3-4B22-891B-7F51CE0AB0CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{679F13A3-08B3-4B22-891B-7F51CE0AB0CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{679F13A3-08B3-4B22-891B-7F51CE0AB0CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{679F13A3-08B3-4B22-891B-7F51CE0AB0CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CC070C2-3B84-4FF8-A6F4-5C418E416F15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CC070C2-3B84-4FF8-A6F4-5C418E416F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CC070C2-3B84-4FF8-A6F4-5C418E416F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CC070C2-3B84-4FF8-A6F4-5C418E416F15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED23104E-4C5C-4AE4-A511-3EE775317F47}
+	EndGlobalSection
+EndGlobal

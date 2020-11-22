@@ -1,0 +1,27 @@
+﻿@model IndexModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<div>
+    <div>
+        <br><p>Enter Search Details</p>
+        @using (Html.BeginForm())
+        {
+            <div>Phrase: @Html.TextBox("searchphrase")</div><br />
+            <div>Website URL: @Html.TextBox("searchwebsite")</div><br /><br />
+
+            <div>
+                <p>Select Search Engine:</p>
+                <span>Google</span> @Html.RadioButton("searchengine", "Google", true)
+                <span> | Bing</span> @Html.RadioButton("searchengine", "Bing", false)
+            </div>
+            <br /><br />
+            <input type="submit" value="Find Position" />
+        }
+
+        <label> First appears at position: </label>
+        <input type="text" id="SearchResult" name="Result" value="@Model.Result" readonly><br>
+
+    </div>
+</div>
