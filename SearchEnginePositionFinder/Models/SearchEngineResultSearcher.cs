@@ -20,26 +20,6 @@ namespace SearchEnginePositionFinder.Models
         }
 
         /// <summary>
-        /// Get the number of matches to the searchString inside resultString
-        /// </summary>
-        /// <param name="resultString"></param>
-        /// <param name="searchString"></param>
-        /// <returns>Number of matches</returns>
-        private int GetNumberOfURLMatches()
-        {
-            int numberOfMatches = 0;
-
-            MatchCollection matchResult = Regex.Matches(searchResults, searchSite);
-
-            foreach (Match match in matchResult)
-            {
-                numberOfMatches += 1;
-            }
-
-            return numberOfMatches;
-        }
-
-        /// <summary>
         /// Get the positions of the searchString inside the resultString
         /// </summary>
         /// <returns>Positions of the search string</returns>
